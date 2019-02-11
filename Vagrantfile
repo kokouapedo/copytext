@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
     end
 
     ############################################################
-    # Provisioning with Ansible
+    # Provisioning with Ansible (Installing it in the remote VM)
     config.vm.provision "ansible_local" do |ansible|
         ansible.playbook = "playbook.yml"
         ansible.install_mode = "pip"
